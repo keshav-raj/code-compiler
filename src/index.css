@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100vh;
+}
+
+.editor, .console {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.editor {
+    background-color: #1e1e1e;
+    border-right: 1px solid #ddd;
+}
+
+.console {
+    background-color: #282c34;
+    color: white;
+    overflow-y: auto;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
